@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Assignment #1</title>
   </head>
+
   <style>
 table {
   font-family: arial, sans-serif;
@@ -32,6 +33,12 @@ tr:nth-child(even) {
 h2{
   text-align: center;
 }
+#list_horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 </style>
 
 <body>
@@ -67,12 +74,11 @@ h2{
           <th rowspan="2">Team Name</th>
           <th>First Half</th>
           <th>Second Half</th>
-          <th></th>
+          <th rowspan="2">Final</th>
         </tr>
         <tr>
           <th><img src="img/ashton.png" display= "block" width="100%" alt="" /></th>
           <th><img src="img/gerrard_shot.png" display="block" width="100%" alt="" /></th>
-          <th>Final</th>
         </tr>
 
         <tr >
@@ -95,9 +101,10 @@ h2{
   <hr>
     <h2>List</h2>
   <hr>
-  <h4>2006 FA Cup Final</h4>
-      <ul>
-        <li><img src="img/lfc.png" height ="100" width="75" alt=""><a href = "https://www.liverpoolfc.com/"><h3>Liverpool Football Club</h3></a></li>
+  <h3 align="center">2006 FA Cup Final</h3>
+    <div class="lfc_table">
+      <ul id="list_horizontal">
+        <li><img src="img/lfc.png" height ="100" width="75" alt=""><a href = "https://www.liverpoolfc.com/"><h3>Liverpool Football Club</h3></a>
           <ul>
             <li>Manager: Rafael Benítez</li>
             <li>Goalkeeper</li>
@@ -136,7 +143,9 @@ h2{
                 <li>Djibril Cissé</li>
               </ul>
           </ul>
-        <li><img src="img/whufc.png" height ="100" width="75" alt=""><a href = "https://www.whufc.com/"><h3>West Ham United Football Club</h3></a></li>
+          </li>
+
+        <li><img src="img/whufc.png" height ="100" width="75" alt=""><a href = "https://www.whufc.com/"><h3>West Ham United Football Club</h3></a>
         <ul>
           <li>Manager: Alan Pardew</li>
           <li>Goalkeeper</li>
@@ -175,8 +184,10 @@ h2{
               <li>Dean Ashton</li>
             </ul>
         </ul>
-      </ul>
+        </li>
 
+      </ul>
+    </div>
 
 </div>
 
