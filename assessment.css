@@ -1,13 +1,19 @@
+/* generic selectors */
 
-/* Classes */
-.subjectHeader{
-  color: green;
-  font-family: sans-serif;
+blockquote{
+  background-color: black;
+  color: white;
 }
 
 a:hover{
   color: red;
   text-decoration: none;
+}
+
+/* Classes */
+.subjectHeader{
+  color: green;
+  font-family: sans-serif;
 }
 
 
@@ -26,4 +32,31 @@ a:hover{
 
 #teamRoster li{
   list-style: square;
+}
+
+#teamRoster > li:first-child img{
+  display: none;
+}
+#teamRoster > li:first-child img{
+  display: none;
+}
+#teamRoster > li:last-child img{
+  display: none;
+}
+
+#teamRoster > li:first-child {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  list-style-type: none;
+}
+#teamRoster > li:last-child {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  list-style-type: none;
+}
+
+#checkbox-grid{
+  list-style-type: none;
 }
