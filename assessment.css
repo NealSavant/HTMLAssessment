@@ -5,14 +5,25 @@
   font-family: sans-serif;
 }
 
+a:hover{
+  color: red;
+  text-decoration: none;
+}
 
 
 
 /* IDs */
 #scoreBoard{
   text-align: center;
-
+   border-collapse: : collapse; /* I like the look of this */
+}
+#scoreBoard table, th, td{
+  border:1px solid black;
 }
 #scoreBoard th{
-  
+  background-color: aqua;
+}
+
+#teamRoster li{
+  list-style: square;
 }
